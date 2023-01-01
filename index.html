@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- https://openbase.com/js/toastify-js -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">Söktext</label>
+                        <input class="form-control" type="text" name="Picture" id="myInput">
+
+                    </div>
+                    <div class="col-md-3">
+                        <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">Antal</label>
+                        <input class="form-control" type="number" min="0" name="" id="amount" placeholder="antal">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="Sortering" class="col-form-label col-form-label-lg mt-4">Sortera av:</label>
+                        <select id="Sortera" class="form-control form-control-lg form-select">
+                            <option id="val" value="date-posted-asc" selected>Datum</option>
+                            <option id="val" value="relevance">Relevans</option>
+                            <option id="val" value="interestingness-asc">interestingness</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="Sortering" class="col-form-label col-form-label-lg mt-4">Storlek:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="stor" name="my_size" value="b"
+                                checked="checked">
+                            <label class="form-check-label" for="stor">Stor</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="mellan" name="my_size" value="z">
+                            <label class="form-check-label" for="mellan">Mellan</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"  id="liten" name="my_size" value="n">
+                            <label class="form-check-label" for="liten">Liten</label>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="submit" value="Hämta bild" id="getImage" class="btn btn-primary mt-3">
+                        </div>
+                    </div>
+
+
+
+
+             
+
+
+
+        </form>
+        
+    </div>
+    
+    <div class="container mt-4">
+        <div class="spin-container">
+            <div class="spin"></div>
+        </div>
+    </div>
+
+    <div class="container mt-4" id="img-container"></div>
+
+
+</body>
+
+</html>
