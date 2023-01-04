@@ -46,6 +46,20 @@ function getPictures() {
       }).showToast();
       return;
   }
+
+ if (numberInput.value=="") {
+    Toastify({
+
+      text: "Du måste ange antal",
+      duration: 5000,
+      close: true,
+      style: {
+        background: "red",
+      }
+      
+      }).showToast();
+      return;
+  }
   
   let select = dateInput.value;
   console.log(select);
